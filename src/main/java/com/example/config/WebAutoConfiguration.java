@@ -46,8 +46,9 @@ public class WebAutoConfiguration extends ApplicationObjectSupport {
         Long fileSize = multipartFileProperties.getFileSize();
         fileSize = fileSize != null ? fileSize : 5;
 
-        wrapper.setMultipartConfigElement(new MultipartConfigElement(null, fileSize * M, fileSize * M, 5));
         wrapper.addMapping("/");
+        wrapper.setLoadOnStartup(1);
+        wrapper.setMultipartConfigElement(new MultipartConfigElement(null, fileSize * M, fileSize * M, 5));
 
         tomcat.getConnector();
         tomcat.start();
