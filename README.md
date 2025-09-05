@@ -3,9 +3,9 @@ SpringBoot
 1.打包后引入依赖
 ```
         <dependency>
-            <groupId>org.xhy</groupId>
-            <artifactId>xhy-web-starter</artifactId>
-            <version>1.0.0</version>
+            <groupId>org.example</groupId>
+            <artifactId>spring-mvc-demo</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 ```
 2.启动
