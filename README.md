@@ -1,4 +1,4 @@
-SpringBoot 
+SpringBoot
 1.打包后引入依赖
 ```
         <dependency>
@@ -43,8 +43,8 @@ public class DemoControllerAdvice {
     public String ex(Exception e){
         return e.getMessage();
     }
-```
     @ConvertType(Integer.class)
     public Object c(Object o){
         return o;
     }
+```
